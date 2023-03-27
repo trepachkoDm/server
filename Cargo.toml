@@ -1,0 +1,15 @@
+[package]
+name = "server"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "4.1.0"
+serde = { version = "1", features = ["derive"]}
+serde_json = "1.0"
+mongodb = "2.3.0"
+bson = "2.6.0"
+reqwest = { version = "0.11.15", features = ["json"] }
+tokio = { version = "1.26.0", features = ["full"] }
